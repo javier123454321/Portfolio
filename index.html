@@ -11,11 +11,11 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -39,7 +39,6 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav justify-content-end">
 							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
 							<li class="nav-item submenu dropdown">
 								<a class="nav-link" href="#">Portfolio</a>
 								<ul class="dropdown-menu">
@@ -47,13 +46,8 @@
 									<li class="nav-item"><a class="nav-link" href="portfolio-details.html">Portrfolio Details</a>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								 aria-expanded="false">Pages</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a>
-								</ul>
-							</li>
+							
+							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								 aria-expanded="false">Blog</a>
@@ -79,7 +73,11 @@
 					<h1>Javier González</h1>
 					<h3 class="animated slideInLeft">Designer</h3>
 					<h3 class="animated slideInLeft delay-1s">Coder</h3>
-					<h3 class="animated slideInLeft delay-2s">Entrepreneur</h3>
+					<span class="animated slideInLeft delay-2s"> <h3>Amateur </h3> 
+							<ul class="animatedTitles">
+								<li><h3 id="toFill" class="active"></h3> </li>
+							</ul>
+						</span>
 					<a href="#" class="primary-btn">Hire Me</a>
 				</div>
 			</div>
@@ -87,18 +85,27 @@
 	</section>
 
 	<!--================End Home Banner Area =================-->
-
-	<!--================ Start Portfolio Area =================-->
-	<section class="section_gap portfolio_area" id="work">
+	<section class="small_gap portfolio_title" id="work">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6 text-center">
+			<div class="row">
+				<div class="col-lg-12">
 					<div class="main-title">
-						<h1>Latest Works</h1>
-						<p>I Build Stuff...</p>
+						<h1>Portfolio</h1>
+						<h3>( I Sometimes Make Things )</h3>
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+	<!--================ Start Portfolio Area =================-->
+	<section class="small_gap portfolio_area" id="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+
+				</div>
+			</div>
+
 			<div class="row justify-content-center">
 				<div class="col-lg-10">
 					<div class="projects_fillter">
@@ -111,9 +118,10 @@
 					</div>
 				</div>
 			</div>
-			<div class="projects_inner row grid">
+			<div class="projects_inner row grid justify-content-center">
 				<div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
-				<div class="col-lg-6 col-sm-6 col-sm-12 brand web grid-item">
+				<div data-aos="fade-up" data-aos-duration="500" data-aos-mirror="true" data-aos-easing="ease-in-out" 
+					class="col-lg-6 col-sm-6 col-sm-12 web grid-item">
 					<div class="projects_item">
 						<img class="img-fluid w-100" src="img/works/work1.png" alt="">
 						
@@ -127,18 +135,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 col-sm-12 brand arch grid-item">
+				<div data-aos="fade-up" data-aos-duration="500" data-aos-mirror="true" data-aos-delay="500" data-aos-easing="ease-in-out" 
+				class="col-lg-6 col-md-6 col-sm-12 arch grid-item">
 					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work2.jpg" alt="">
+						<img class="img-fluid w-100" src="img/works/work2.1.gif" alt="">
 						<div class="projects_text">
-							<a href="portfolio-details.html">
-								<h4>2D Vinyl Design</h4>
-							</a>
-							<p>Client Project</p>
+								<h4>Bed</h4>
+							<p>Personal Project</p>
+							<div class="container d-flex justify-content-center">
+								<a class="btn btn-light portfolioIcon" href="portfolio/bed.html"><img class="iconImage" src="img/elements/see_info.png" alt="See Info"></a>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 arch grid-item">
+				<div data-aos="fade-up" data-aos-duration="250" data-aos-easing="ease-in-sine" 
+				class="col-lg-3 col-sm-6 arch grid-item">
 					<div class="projects_item">
 						<img class="img-fluid w-100" src="img/works/work3.jpg" alt="">
 						<div class="projects_text">
@@ -149,9 +160,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-sm-6 arch work grid-item">
+				<div data-aos="fade-up" data-aos-duration="250" data-aos-mirror="true" data-aos-delay="500" data-aos-easing="ease-in-out" 
+				class="col-lg-6 col-sm-6 arch work grid-item">
 					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work5.jpg" alt="">
+						<img class="img-fluid w-100" src="img/works/Tranverse-Section.png" alt="">
 						<div class="projects_text">
 							<a href="portfolio-details.html">
 								<h4>2D Vinyl Design</h4>
@@ -160,7 +172,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-sm-6 arch web grid-item">
+				<div data-aos="fade-up" data-aos-duration="250" data-aos-mirror="true" data-aos-delay="500" data-aos-easing="ease-in-out" 
+				class="col-lg-6 col-sm-6 arch web grid-item">
 					<div class="projects_item">
 						<img class="img-fluid w-100" src="img/works/work4.jpg" alt="">
 						<div class="projects_text">
@@ -182,7 +195,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 brand work web grid-item">
+				<div data-aos="fade-up" data-aos-duration="250" data-aos-mirror="true" data-aos-delay="500" data-aos-easing="ease-in-out" 
+				class="col-lg-3 col-sm-6 brand work web grid-item">
 					<div class="projects_item">
 						<img class="img-fluid w-100" src="img/works/work6.jpg" alt="">
 						<div class="projects_text">
@@ -193,7 +207,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-sm-6 brand work web grid-item">
+				<div data-aos="fade-up" data-aos-duration="250" data-aos-mirror="true" data-aos-delay="500" data-aos-easing="ease-in-out" 
+				class="col-lg-3 col-sm-6 brand work web grid-item">
 					<div class="projects_item">
 						<img class="img-fluid w-100" src="img/works/work7.jpg" alt="">
 						<div class="projects_text">
@@ -214,23 +229,18 @@
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-5 about-left">
-					<img class="img-fluid" src="img/about-img.png" alt="">
+					<!-- <img class="img-fluid" src="img/about-img.png" alt=""> -->
 				</div>
 				<div class="col-lg-6 col-md-12 about-right">
 					<div class="main-title text-left">
-						<h1>about myselt</h1>
+						<h1>About Me.</h1>
 					</div>
 					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
 						<p>
-							inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards
-							especially in the
-							workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate
-							behavior
-							is often laughed. inappropriate behavior is often laughed off as “boys will be boys,” women face higher.
-						</p>
-						<p>That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is
-							often
-							laughed.
+							I am a designer, coder, and all-around curious person of a diverse heritage. Professionally exploring 
+							entrepreneurship, information technology, design and the intersection of the built environment, our 
+							networked culture, and society. Doing my best to take advantage of the statistical impossibility that 
+							is being alive. 
 						</p>
 					</div>
 					<a href="#" class="primary-btn">More Info</a>
@@ -240,105 +250,7 @@
 	</section>
 	<!--================ End About Area =================-->
 
-	<!--================ Start Testimonial Area =================-->
-	<div class="section_gap testimonial_area">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-7 text-left">
-					<div class="active_testimonial owl-carousel" data-slider-id="1">
-						<!-- single testimonial -->
-						<div class="single_testimonial">
-							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
-								<div class="review">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
-									it, you travel across her face</p>
-							</div>
-						</div>
-
-						<div class="single_testimonial">
-							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
-								<div class="review">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
-									it, you travel across her face</p>
-							</div>
-						</div>
-
-						<div class="single_testimonial">
-							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
-								<div class="review">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
-									it, you travel across her face</p>
-							</div>
-						</div>
-
-						<div class="single_testimonial">
-							<div class="testimonial_head">
-								<img src="img/quote.png" alt="">
-								<h4>Fanny Spencer</h4>
-								<div class="review">
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-								</div>
-							</div>
-							<div class="testimonial_content">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
-									it, you travel across her face</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 offset-lg-1">
-					<div class="testimonial_logos">
-						<div class="top_logos">
-							<img src="img/brands/logo1.png" alt="">
-							<img src="img/brands/logo2.png" alt="">
-						</div>
-						<div class="mid_logo">
-							<img src="img/brands/logo3.png" alt="">
-						</div>
-						<div class="bottom_logos jus">
-							<img src="img/brands/logo4.png" alt="">
-							<img src="img/brands/logo5.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--================ End Testimonial Area =================-->
+	
 
 	<!--================ Start Newsletter Area =================-->
 	<section class="section_gap newsletter-area">
@@ -424,6 +336,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/mail-script.js"></script>
+	<script src="js/fill_words.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="js/gmaps.min.js"></script>

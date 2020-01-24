@@ -16,7 +16,7 @@ Author E-mail: naimlasker@gmail.com
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Poppins:700|Roboto:400,500,500i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700,800|Roboto:400,500,500i|Montserrat:800,bold");
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Medium Layout: 1280px */
@@ -28,9 +28,9 @@ Author E-mail: naimlasker@gmail.com
 body {
   line-height: 24px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  color: #dbdbdb; }
+  color: #CDCDCD; }
   body.elements {
     font-weight: 400; }
 
@@ -93,13 +93,16 @@ button:focus {
     .section_gap_bottom {
       padding-bottom: 80px; } }
 
+.small_gap {
+  padding-top: 60px; }
+
 .gray-bg {
-  background: #f9f9ff; }
+  background-color: #464646; }
 
 /* Main Title Area css
 ============================================================================================ */
 .main-title {
-  text-align: center;
+  text-align: left;
   margin-bottom: 75px; }
   @media (max-width: 767px) {
     .main-title {
@@ -117,36 +120,11 @@ button:focus {
       .main-title h1 {
         font-size: 36px;
         padding-bottom: 0px !important; } }
-    .main-title h1:before {
-      position: absolute;
-      left: 50%;
-      bottom: 0;
-      height: 2px;
-      width: 100px;
-      content: "";
-      background: #6993d2;
-      margin-left: -50px; }
-      @media (max-width: 767px) {
-        .main-title h1:before {
-          display: none; } }
-    .main-title h1:after {
-      position: absolute;
-      left: 50%;
-      bottom: -4px;
-      height: 10px;
-      width: 10px;
-      content: "";
-      background: #e45447;
-      margin-left: -5px;
-      border-radius: 50%; }
-      @media (max-width: 767px) {
-        .main-title h1:after {
-          display: none; } }
   .main-title p {
     font-size: 15px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 26px;
-    color: #dbdbdb;
+    color: #CDCDCD;
     margin-bottom: 0px;
     margin: auto; }
 
@@ -155,7 +133,7 @@ button:focus {
 .primary-btn {
   display: inline-block;
   color: #000;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 46px;
@@ -200,7 +178,7 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 12px/100px "Roboto", sans-serif;
+        font: 500 12px/100px "Montserrat", sans-serif;
         text-transform: capitalize;
         color: #000;
         padding: 0px;
@@ -313,16 +291,38 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .landingBanner {
-  background-image: url(../img/banner/banner-bg1.jpg); }
-
-.banner-area {
-  background: url(../img/banner/banner-bg1.jpg); }
-  .banner-area .single_slide_banner {
-    background-size: cover;
-    background-repeat: no-repeat; }
+  background: linear-gradient(270deg, #413491 0%, #4E75AE 100%), #413491; }
   @media (max-width: 991px) {
-    .banner-area .fullscreen {
-      height: 600px !important; } }
+    .landingBanner .fullscreen {
+      height: 100vh !important; } }
+  .landingBanner .tagLine {
+    margin-top: 20%;
+    margin-bottom: 30px; }
+    .landingBanner .tagLine h1 {
+      font-size: 94px; }
+      @media (max-width: 991px) {
+        .landingBanner .tagLine h1 {
+          font-size: 72px; } }
+    .landingBanner .tagLine h3 {
+      font-size: 46px; }
+      @media (max-width: 991px) {
+        .landingBanner .tagLine h3 {
+          font-size: 28px; } }
+    .landingBanner .tagLine h1, .landingBanner .tagLine h3 {
+      color: "Montserrat", sans-serif; }
+    .landingBanner .tagLine a {
+      margin: 30px auto;
+      width: 200px; }
+    .landingBanner .tagLine span {
+      display: flex; }
+      .landingBanner .tagLine span ul, .landingBanner .tagLine span li {
+        display: flex;
+        list-style-type: none;
+        list-style-position: inside;
+        margin-left: 5px;
+        padding: 0; }
+        .landingBanner .tagLine span ul h3, .landingBanner .tagLine span li h3 {
+          color: #3c3c3c; }
 
 .banner-content {
   text-align: left; }
@@ -352,7 +352,7 @@ button:focus {
         font-size: 40px; } }
   .banner-content h3 {
     font-size: 30px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #000;
     margin-bottom: 30px; }
@@ -362,17 +362,6 @@ button:focus {
 
 /* End Home Banner Area css
 ============================================================================================ */
-.landingBanner {
-  background-image: url(../img/banner/banner-bg1.jpg);
-  background-size: cover; }
-  .landingBanner .tagLine {
-    margin-bottom: 30px; }
-    .landingBanner .tagLine h1, .landingBanner .tagLine h3 {
-      color: black; }
-    .landingBanner .tagLine a {
-      margin: 30px auto;
-      width: 200px; }
-
 .banner_area {
   position: relative;
   z-index: 1;
@@ -400,7 +389,7 @@ button:focus {
       .banner_area .banner_inner .banner_content .page_link a {
         font-size: 14px;
         color: #000;
-        font-family: "Roboto", sans-serif;
+        font-family: "Montserrat", sans-serif;
         margin-right: 14px;
         position: relative; }
         .banner_area .banner_inner .banner_content .page_link a:before {
@@ -427,8 +416,15 @@ button:focus {
 /*----------------------------------------------------*/
 /* Projects Area css
 ============================================================================================ */
+.portfolio_title {
+  background-color: black; }
+  .portfolio_title .main-title h1 {
+    color: #d8d8d8;
+    margin-bottom: 0;
+    padding-bottom: 0; }
+
 .portfolio_area {
-  background-color: #9658d3; }
+  background-color: #241F33; }
 
 .projects_fillter {
   background: #571080; }
@@ -436,11 +432,7 @@ button:focus {
     position: relative;
     text-align: center;
     margin-bottom: 50px;
-    padding: 13px 0; }
-    @media (max-width: 575px) {
-      .projects_fillter .filter {
-        justify-content: center;
-        padding: 13px; } }
+    padding: 13px; }
     .projects_fillter .filter:after {
       position: absolute;
       left: 2%;
@@ -454,20 +446,20 @@ button:focus {
       display: inline-block;
       margin-right: 30px;
       font-size: 12px;
-      color: #dbdbdb;
+      color: #CDCDCD;
       text-transform: uppercase;
       cursor: pointer; }
       .projects_fillter .filter li:last-child {
         margin-right: 0px; }
       .projects_fillter .filter li.active, .projects_fillter .filter li:hover {
         color: #6993d2; }
-      @media (max-width: 350px) {
+      @media (max-width: 700px) {
         .projects_fillter .filter li {
           width: 100%;
           margin: 5px 3px; }
           .projects_fillter .filter li.active, .projects_fillter .filter li:hover {
             background-color: #6993d2;
-            color: #dbdbdb; } }
+            color: #CDCDCD; } }
 
 .projects_inner {
   margin-bottom: -30px; }
@@ -607,7 +599,7 @@ button:focus {
   padding: 0px 32px;
   font-size: 13px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #080808;
   line-height: 34px;
   display: inline-block; }
@@ -623,7 +615,7 @@ button:focus {
   line-height: 40px;
   padding: 0px 28px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   -webkit-transition: all 0.4s ease 0s;
@@ -681,7 +673,7 @@ button:focus {
     padding: 30px 35px 40px 30px; }
     .causes_item .causes_text h4 {
       color: #080808;
-      font-family: "Roboto", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 15px;
@@ -691,7 +683,7 @@ button:focus {
     .causes_item .causes_text p {
       font-size: 14px;
       line-height: 24px;
-      color: #dbdbdb;
+      color: #CDCDCD;
       font-weight: 300;
       margin-bottom: 0px; }
   .causes_item .causes_bottom a {
@@ -702,7 +694,7 @@ button:focus {
     line-height: 50px;
     background: #6993d2;
     color: #fff;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500; }
     .causes_item .causes_bottom a + a {
@@ -727,7 +719,7 @@ button:focus {
       padding: 10px 0px 13px;
       transition: all 0.3s linear; }
       .single-recent-blog-post .details .sec_h4:hover {
-        color: #dbdbdb; }
+        color: #CDCDCD; }
   .single-recent-blog-post .date {
     font-size: 14px;
     line-height: 24px;
@@ -812,14 +804,14 @@ button:focus {
   .blog_info .post_tag {
     padding-bottom: 20px; }
     .blog_info .post_tag a {
-      font: 300 14px/21px "Roboto", sans-serif;
+      font: 300 14px/21px "Montserrat", sans-serif;
       color: #080808; }
       .blog_info .post_tag a:hover {
-        color: #dbdbdb; }
+        color: #CDCDCD; }
       .blog_info .post_tag a.active {
         color: #6993d2; }
   .blog_info .blog_meta li a {
-    font: 300 14px/20px "Roboto", sans-serif;
+    font: 300 14px/20px "Montserrat", sans-serif;
     color: #777777;
     vertical-align: middle;
     padding-bottom: 12px;
@@ -1311,7 +1303,7 @@ button:focus {
   .contact_info .info_item h6 {
     font-size: 16px;
     line-height: 24px;
-    color: "Roboto", sans-serif;
+    color: "Montserrat", sans-serif;
     font-weight: bold;
     margin-bottom: 0px;
     color: #080808; }
@@ -1329,7 +1321,7 @@ button:focus {
     line-height: 26px;
     color: #999;
     border: 1px solid #eeeeee;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     border-radius: 0px;
     padding-left: 20px; }
     .contact_form .form-group .form-control:focus {
@@ -1387,7 +1379,7 @@ button:focus {
       text-align: center;
       color: #6993d2;
       padding-bottom: 10px;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Montserrat", sans-serif; }
     .modal-message .modal-dialog .modal-content .modal-header p {
       display: block; }
 
@@ -2613,6 +2605,7 @@ h6 {
 .about-area .main-title {
   margin-bottom: 30px; }
   .about-area .main-title h1 {
+    font-size: 96px;
     padding-bottom: 20px;
     margin-bottom: 30px; }
     .about-area .main-title h1:before {
@@ -2626,8 +2619,6 @@ h6 {
       @media (max-width: 767px) {
         .about-area .main-title h1:before {
           left: 10%; } }
-    .about-area .main-title h1:after {
-      left: 5px; }
   @media (max-width: 1024px) {
     .about-area .main-title {
       padding-bottom: 0px; } }
@@ -2640,158 +2631,6 @@ h6 {
   margin-top: 40px; }
 
 /* End About Area css
-============================================================================================ */
-/* Start Testimonial Area css
-============================================================================================ */
-.testimonial_area {
-  background: url(../img/testi-bg.jpg) no-repeat center; }
-  @media (max-width: 991px) {
-    .testimonial_area {
-      background-image: none; }
-      .testimonial_area .testimonial-img {
-        display: none; } }
-  .testimonial_area .testimonial_logos {
-    background: #fff;
-    padding: 80px 50px;
-    box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2); }
-    .testimonial_area .testimonial_logos img {
-      cursor: pointer; }
-    .testimonial_area .testimonial_logos .top_logos img:last-child {
-      float: right; }
-    .testimonial_area .testimonial_logos .mid_logo {
-      margin: 85px 0;
-      text-align: center; }
-    .testimonial_area .testimonial_logos .bottom_logos img:last-child {
-      float: right; }
-    @media (max-width: 991px) {
-      .testimonial_area .testimonial_logos {
-        display: none; } }
-  .testimonial_area .active_testimonial .owl-dots {
-    background: #6993d2;
-    height: 25px;
-    width: 100px;
-    position: absolute;
-    left: 0;
-    bottom: -20px;
-    border-radius: 50px; }
-    @media (max-width: 991px) {
-      .testimonial_area .active_testimonial .owl-dots {
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        transform: translateX(-50%); } }
-    .testimonial_area .active_testimonial .owl-dots .owl-dot {
-      height: 15px;
-      width: 15px;
-      background: #ec887f;
-      margin: 5px;
-      border-radius: 50%;
-      margin-top: 5px;
-      display: inline-block; }
-      .testimonial_area .active_testimonial .owl-dots .owl-dot.active {
-        background: #ffffff; }
-
-@media (max-width: 991px) {
-  .single_testimonial {
-    text-align: center; } }
-
-.single_testimonial .testimonial_head {
-  text-align: left; }
-  @media (max-width: 991px) {
-    .single_testimonial .testimonial_head {
-      text-align: center; } }
-  .single_testimonial .testimonial_head img {
-    margin-bottom: 30px;
-    width: auto; }
-    @media (max-width: 991px) {
-      .single_testimonial .testimonial_head img {
-        margin: 0 auto 30px; } }
-  .single_testimonial .testimonial_head h4 {
-    margin-bottom: 10px;
-    color: #000;
-    font-size: 21px; }
-  .single_testimonial .testimonial_head .review i.fa {
-    color: #ffc000; }
-
-.single_testimonial .testimonial_content {
-  margin-top: 30px; }
-  .single_testimonial .testimonial_content p {
-    font-size: 24px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 40px;
-    line-height: 36px;
-    padding-right: 35px; }
-    @media (max-width: 767px) {
-      .single_testimonial .testimonial_content p {
-        font-size: 18px; } }
-
-/* End Testimonial Area css
-============================================================================================ */
-/* Start Newsletter Area css
-============================================================================================ */
-.newsletter-area {
-  background-image: url(../img/newsletter-bg.jpg);
-  background-size: cover; }
-  .newsletter-area .main-title h1 {
-    color: #fff; }
-    .newsletter-area .main-title h1:before {
-      background: #fff; }
-    .newsletter-area .main-title h1:after {
-      background: #fff; }
-  .newsletter-area .main-title p {
-    color: #fff; }
-
-.newsletter_form .navbar-form {
-  width: 100%;
-  background: #fff;
-  border-radius: 50px; }
-  .newsletter_form .navbar-form .form-control {
-    border: none;
-    font-size: 13px;
-    background: transparent;
-    color: #000;
-    padding: 0 20px;
-    height: 50px; }
-    .newsletter_form .navbar-form .form-control:focus {
-      box-shadow: none; }
-  .newsletter_form .navbar-form input.placeholder {
-    font-size: 12px;
-    color: #999999;
-    text-transform: uppercase; }
-  .newsletter_form .navbar-form input:-moz-placeholder {
-    font-size: 12px;
-    color: #999999;
-    text-transform: uppercase; }
-  .newsletter_form .navbar-form input::-moz-placeholder {
-    font-size: 12px;
-    color: #999999;
-    text-transform: uppercase; }
-  .newsletter_form .navbar-form input::-webkit-input-placeholder {
-    font-size: 12px;
-    color: #999999;
-    text-transform: uppercase; }
-  .newsletter_form .navbar-form .add-on {
-    border-radius: 50px;
-    border: 1px solid transparent;
-    height: 50px; }
-  .newsletter_form .navbar-form .genric-btn {
-    color: #22195e;
-    border: none;
-    border-radius: 50px;
-    height: 40px;
-    line-height: 40px;
-    margin: 4px;
-    font-weight: 500;
-    text-transform: uppercase;
-    background: #571080; }
-    .newsletter_form .navbar-form .genric-btn:hover {
-      background-color: #6993d2;
-      color: #ffffff; }
-
-/* End Newsletter Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -2882,8 +2721,8 @@ h6 {
 .social_widget p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Roboto", sans-serif;
-  color: #dbdbdb;
+  font-family: "Montserrat", sans-serif;
+  color: #CDCDCD;
   margin-bottom: 10px; }
 
 .social_widget .list li {
