@@ -1,21 +1,50 @@
 /* Home Banner Area css
 ============================================================================================ */
-
-.landingBanner{
-    background-image: url(../img/banner/banner-bg1.jpg);
-}
-.banner-area {
-    background: url(../img/banner/banner-bg1.jpg);
-    .single_slide_banner {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+.landingBanner {
+    background: linear-gradient(270deg, #413491 0%, #4E75AE 100%), #413491;
     .fullscreen {
         @media (max-width: 991px) {
-            height: 600px !important;
+            height: 100vh !important;
+            }
+        }
+    .tagLine{
+        margin-top: 20%;
+        margin-bottom: 30px;
+        h1{
+            font-size: 94px;
+            @media (max-width: 991px) {
+                font-size: 72px;
+                }
+            
+        }
+        h3{
+            font-size: 46px;
+            @media (max-width: 991px) {
+                font-size: 28px;
+                }
+        }
+        h1, h3{
+            color: $primary-font;
+            }
+        a{
+            margin: 30px auto;
+            width: 200px;
+            }
+        span{
+            display: flex;
+            ul, li{
+                display: flex;
+                list-style-type: none;
+                list-style-position:inside;
+                margin-left:5px;
+                padding:0;
+                h3{
+                 color: rgb(60, 60, 60);
+                    }
+                }
+            }
         }
     }
-}
 
 .banner-content {
     text-align: left;
@@ -60,20 +89,6 @@
 
 /* End Home Banner Area css
 ============================================================================================ */
-.landingBanner {
-    background-image: url(../img/banner/banner-bg1.jpg); 
-    background-size: cover;
-    .tagLine{
-        margin-bottom: 30px;
-        h1, h3{
-            color: black;
-            }
-        a{
-            margin: 30px auto;
-            width: 200px;
-        }
-        }
-    }
   
 .banner_area {
     position: relative;
