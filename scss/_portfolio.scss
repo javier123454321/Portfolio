@@ -27,23 +27,44 @@
   }
 }
 .portfolio_grid_area.img-left-aligned{
+
+  justify-content: space-evenly;
   display:grid;
   grid-template-columns: 1fr .5fr 2fr;
   grid-template-areas: 
     "img_left img_rightup txt_right"
     "img_left img_rightdn txt_right";
   grid-gap: .5rem;
+  @media(max-width:1028px){
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "img_rightup img_left    img_rightdn"
+      "txt_right   txt_right   txt_right";
+  }
   & > img{
     object-fit: cover;
     max-height: 355px;
+    @media(max-width:1200px){
+      max-height: none;
+      max-width: 275px;
+    }
+    @media(max-width:1028px){
+      height: 175px;
+      max-width: 300px;
+      margin-bottom: 35px;
+    }
   }
   .img_left{
     grid-area: img_left;
+    @media(max-width:1028px){
+      justify-self: center;;
+    }
   }
   .img_rightup{
     grid-area: img_rightup;
   }
   .img_rightdn{
+    align-self: flex-start;
     grid-area: img_rightdn;
   }
   .img_rightup, .img_rightdn{
@@ -60,14 +81,19 @@
   left: 50%;
   bottom: 0px;
   text-align: center;
+  margin-left: 35px;
+  margin-right: 20px;
   h4 {
     font-size: 34px;
     color: #fff;
     margin-bottom: 5px;
     cursor: pointer;
+    @media(max-width:1200px){
+      font-size: 26px;
+    }
   }
   p {
-    margin: 15px 0 15px 35px;
+    margin: 15px 0;
     text-align: left;
     font-size: 15px;
     color: #fff;
@@ -78,6 +104,8 @@
   }
   .portfolioIcon{
     margin: 5px;
+    position: relative;
+    bottom: 0em;
     .iconImage{
       object-fit: cover;
       border-radius: 50%;
@@ -168,7 +196,7 @@
     h4 {
       color: $title-color;
       font-size: 21px;
-      margin-bottom: 18px;
+      margin: 18px 0;
       font-weight: 700;
     }
     p {
