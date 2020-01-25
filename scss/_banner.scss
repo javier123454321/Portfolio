@@ -2,10 +2,9 @@
 ============================================================================================ */
 .landingBanner {
     background: linear-gradient(270deg, #413491 0%, #4E75AE 100%), #413491;
-    .fullscreen {
-        @media (max-width: 991px) {
-            height: 100vh !important;
-            }
+    &.fullscreen {
+        height: 100vh;
+        min-height: 800px;
         }
     .tagLine{
         margin-top: 20%;
@@ -43,6 +42,9 @@
                     }
                 }
             }
+        }
+        .ctaHire{
+            text-align: center;
         }
     }
 

@@ -30,8 +30,11 @@
             display: none;
         }
     }
-    .primary-btn {
-        margin-top: 40px;
+    .buttonContainer{
+        text-align: center  ;
+        .primary-btn {
+            margin-top: 40px;
+        }
     }
 }
 

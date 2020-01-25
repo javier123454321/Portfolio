@@ -159,11 +159,13 @@
 }
 
 .danger-border {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.303);
     border: 1px solid #f54940;
-    color: #f54940;
-    &:before {
+    color: #000000;
+    &:hover {
         background: #f54940;
+        color: #ffffff;
+        font-weight: 600;
     }
 }
 

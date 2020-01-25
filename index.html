@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Steve Portfolio</title>
+	<title>Javier Gonzalez | Software Developer, Designer, Amateur</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -66,19 +66,21 @@
 	<!--================Header Menu Area =================-->
 
 	<!--================Home Banner Area =================-->
-	<section class="landingBanner" id="home">
+	<section class="landingBanner fullscreen" id="home">
 		<div class="container">
-			<div class="row fullscreen d-flex align-items-center">
-				<div class="col-lg-12 justify-content-center align-items-center tagLine">
+			<div class="row d-flex align-items-center">
+				<div class="col-lg-12 tagLine">
 					<h1>Javier González</h1>
-					<h3 class="animated slideInLeft">Designer</h3>
-					<h3 class="animated slideInLeft delay-1s">Coder</h3>
+					<h3 class="animated slideInLeft">Software Developer</h3>
+					<h3 class="animated slideInLeft delay-1s">Designer</h3>
 					<span class="animated slideInLeft delay-2s"> <h3>Amateur </h3> 
-							<ul class="animatedTitles">
-								<li><h3 id="toFill" class="active"></h3> </li>
-							</ul>
-						</span>
-					<a href="#" class="primary-btn">Hire Me</a>
+						<ul class="animatedTitles">
+							<li><h3 id="toFill" class="active"></h3> </li>
+						</ul>
+					</span>
+					<div class="ctaHire">
+						<a href="#" class="genric-btn danger-border circle">Hire Me</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -100,12 +102,6 @@
 	<!--================ Start Portfolio Area =================-->
 	<section class="small_gap portfolio_area" id="work">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-
-				</div>
-			</div>
-
 			<div class="row justify-content-center">
 				<div class="col-lg-10">
 					<div class="projects_fillter">
@@ -120,10 +116,10 @@
 			</div>
 			<div class="projects_inner row grid justify-content-center">
 				<div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
-				<div data-aos="fade-up" data-aos-duration="500" data-aos-mirror="true" data-aos-easing="ease-in-out" 
+					<div data-aos="slideInLeft" data-aos-duration="500" data-aos-mirror="true" data-aos-easing="ease-in-out" 
 					class="col-lg-6 col-sm-6 col-sm-12 web grid-item">
-					<div class="projects_item">
-						<img class="img-fluid w-100" src="img/works/work1.png" alt="">
+						<div class="projects_item">
+							<img class="img-fluid w-100" src="img/works/work1.png" alt="">
 						
 							<div class="projects_text">
 								<h4>Memory Captures Website</h4>
@@ -243,7 +239,9 @@
 							is being alive. 
 						</p>
 					</div>
-					<a href="#" class="primary-btn">More Info</a>
+					<div class="buttonContainer">
+						<a href="#" class="primary-btn">More Info</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -337,13 +335,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/jquery.ajaxchimp.min.js"></script>
 	<script src="js/mail-script.js"></script>
 	<script src="js/fill_words.js"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-	  AOS.init();
-	</script>
-	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 </body>
 

@@ -2,7 +2,11 @@
 ============================================================================================ */
 
 .portfolio_title{
-  background-color: black;
+  background-color: $portfolio-background;
+  .main-title{
+    padding: 40px 0;
+    margin: 0 ;
+  }
   .main-title h1{
     color: rgb(216, 216, 216);
     margin-bottom: 0;
