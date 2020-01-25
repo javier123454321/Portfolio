@@ -17,9 +17,78 @@
     margin-bottom: 15px;
   }
 }
-.portfolio_area {
-  background-color: #241F33;
+.portfolio_project{
+  padding: 50px 0;
+  &:nth-child(odd){
+    background-color: $portfolio-background;
+  }
+  &:nth-child(even){
+    background-color: $portfolio-background-two;
+  }
 }
+.portfolio_grid_area.img-left-aligned{
+  display:grid;
+  grid-template-columns: 1fr .5fr 2fr;
+  grid-template-areas: 
+    "img_left img_rightup txt_right"
+    "img_left img_rightdn txt_right";
+  grid-gap: .5rem;
+  & > img{
+    object-fit: cover;
+    max-height: 355px;
+  }
+  .img_left{
+    grid-area: img_left;
+  }
+  .img_rightup{
+    grid-area: img_rightup;
+  }
+  .img_rightdn{
+    grid-area: img_rightdn;
+  }
+  .img_rightup, .img_rightdn{
+    height: 175px;
+    width: 300px;
+  }
+  .txt_right{
+    grid-area: txt_right;
+  }
+}
+
+.projects_text {
+  width: 100%;
+  left: 50%;
+  bottom: 0px;
+  text-align: center;
+  h4 {
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  p {
+    margin: 15px 0 15px 35px;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+  }
+  .portfolioIcon, .iconImage{
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .portfolioIcon{
+    margin: 5px;
+    .iconImage{
+      object-fit: cover;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.495);
+      padding:2px;
+    }
+  }
+
+
+}
+
 
 .projects_fillter {
   background: $primary-color2;
@@ -61,68 +130,6 @@
           color: $text-color;
         }
       }
-    }
-  }
-}
-
-.projects_inner {
-  margin-bottom: -30px;
-}
-
-.projects_item {
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 30px;
-  &:before {
-    content: "";
-    background: #000;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 300ms ease;
-  }
-  .projects_text {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    bottom: 0px;
-    @include transform(translateX(-50%));
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    @include transition();
-    h4 {
-      font-size: 20px;
-      color: #fff;
-      margin-bottom: 5px;
-      @include transition;
-      cursor: pointer;
-    }
-    p {
-      margin-bottom: 0px;
-      font-size: 15px;
-      color: #fff;
-    }
-    .portfolioIcon{
-      margin: 5px;
-      .iconImage{
-        max-width: 30px;
-        max-height: 30px;
-      }
-    }
-  }
-  &:hover {
-    &:before {
-      opacity: 0.4;
-    }
-    .projects_text {
-      opacity: 1;
-      visibility: visible;
-      bottom: 30px;
     }
   }
 }

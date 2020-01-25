@@ -325,6 +325,18 @@ button:focus {
           color: #3c3c3c; }
   .landingBanner .ctaHire {
     text-align: center; }
+  .landingBanner .ctaHire > a {
+    color: black;
+    background-color: rgba(152, 151, 151, 0.44);
+    box-shadow: rgba(0, 0, 0, 0.351) 0 5px 6px;
+    padding: 10px 0; }
+    .landingBanner .ctaHire > a:active, .landingBanner .ctaHire > a:hover {
+      background-color: #5d4b67;
+      color: white; }
+    .landingBanner .ctaHire > a:active {
+      background-color: #3f3146;
+      transform: translateY(1.5px);
+      box-shadow: rgba(0, 0, 0, 0.694) 0 2px 2px; }
 
 .banner-content {
   text-align: left; }
@@ -431,8 +443,58 @@ button:focus {
     border-bottom: 1px solid lightgray;
     margin-bottom: 15px; }
 
-.portfolio_area {
-  background-color: #241F33; }
+.portfolio_project {
+  padding: 50px 0; }
+  .portfolio_project:nth-child(odd) {
+    background-color: #241F33; }
+  .portfolio_project:nth-child(even) {
+    background-color: rgba(2, 8, 30, 0.98); }
+
+.portfolio_grid_area.img-left-aligned {
+  display: grid;
+  grid-template-columns: 1fr .5fr 2fr;
+  grid-template-areas: "img_left img_rightup txt_right" "img_left img_rightdn txt_right";
+  grid-gap: .5rem; }
+  .portfolio_grid_area.img-left-aligned > img {
+    object-fit: cover;
+    max-height: 355px; }
+  .portfolio_grid_area.img-left-aligned .img_left {
+    grid-area: img_left; }
+  .portfolio_grid_area.img-left-aligned .img_rightup {
+    grid-area: img_rightup; }
+  .portfolio_grid_area.img-left-aligned .img_rightdn {
+    grid-area: img_rightdn; }
+  .portfolio_grid_area.img-left-aligned .img_rightup, .portfolio_grid_area.img-left-aligned .img_rightdn {
+    height: 175px;
+    width: 300px; }
+  .portfolio_grid_area.img-left-aligned .txt_right {
+    grid-area: txt_right; }
+
+.projects_text {
+  width: 100%;
+  left: 50%;
+  bottom: 0px;
+  text-align: center; }
+  .projects_text h4 {
+    font-size: 34px;
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer; }
+  .projects_text p {
+    margin: 15px 0 15px 35px;
+    text-align: left;
+    font-size: 15px;
+    color: #fff; }
+  .projects_text .portfolioIcon, .projects_text .iconImage {
+    max-width: 32px;
+    max-height: 32px; }
+  .projects_text .portfolioIcon {
+    margin: 5px; }
+    .projects_text .portfolioIcon .iconImage {
+      object-fit: cover;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.495);
+      padding: 2px; }
 
 .projects_fillter {
   background: #3f3146; }
@@ -468,66 +530,6 @@ button:focus {
           .projects_fillter .filter li.active, .projects_fillter .filter li:hover {
             background-color: #6993d2;
             color: #CDCDCD; } }
-
-.projects_inner {
-  margin-bottom: -30px; }
-
-.projects_item {
-  position: relative;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 30px; }
-  .projects_item:before {
-    content: "";
-    background: #000;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: all 300ms ease; }
-  .projects_item .projects_text {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    bottom: 0px;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s; }
-    .projects_item .projects_text h4 {
-      font-size: 20px;
-      color: #fff;
-      margin-bottom: 5px;
-      -webkit-transition: all 0.4s ease 0s;
-      -moz-transition: all 0.4s ease 0s;
-      -o-transition: all 0.4s ease 0s;
-      transition: all 0.4s ease 0s;
-      cursor: pointer; }
-    .projects_item .projects_text p {
-      margin-bottom: 0px;
-      font-size: 15px;
-      color: #fff; }
-    .projects_item .projects_text .portfolioIcon {
-      margin: 5px; }
-      .projects_item .projects_text .portfolioIcon .iconImage {
-        max-width: 30px;
-        max-height: 30px; }
-  .projects_item:hover:before {
-    opacity: 0.4; }
-  .projects_item:hover .projects_text {
-    opacity: 1;
-    visibility: visible;
-    bottom: 30px; }
 
 /* End Projects Area css
 ============================================================================================ */

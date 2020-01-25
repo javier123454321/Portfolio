@@ -46,7 +46,23 @@
         .ctaHire{
             text-align: center;
         }
-    }
+        .ctaHire > a{
+            color: black;
+            background-color: rgba(152, 151, 151, 0.44);
+            box-shadow: rgba(0, 0, 0, 0.351) 0 5px 6px;
+            padding: 10px 0;
+            &:active, 
+            &:hover{
+                background-color:  #5d4b67; 
+                color: white;               
+            }
+            &:active{
+                background-color: $primary-color2;
+                transform: translateY(1.5px);
+                box-shadow: rgba(0, 0, 0, 0.694) 0 2px 2px;
+            }
+        }
+}
 
 .banner-content {
     text-align: left;
