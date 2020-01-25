@@ -259,7 +259,7 @@ button:focus {
     top: -70px;
     left: 0;
     right: 0;
-    background: #3f3146;
+    background: #6993d2;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -427,6 +427,9 @@ button:focus {
     color: #d8d8d8;
     margin-bottom: 0;
     padding-bottom: 0; }
+  .portfolio_title .underline {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 15px; }
 
 .portfolio_area {
   background-color: #241F33; }
