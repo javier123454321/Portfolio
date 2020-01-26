@@ -32,14 +32,15 @@
   display:grid;
   grid-template-columns: 1fr .5fr 2fr;
   grid-template-areas: 
-    "img_left img_rightup txt_right"
+    "img_left img_rightup txt_title"
     "img_left img_rightdn txt_right";
   grid-gap: .5rem;
   @media(max-width:1028px){
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-      "img_rightup img_left    img_rightdn"
-      "txt_right   txt_right   txt_right";
+      "tx_title   txt_title  txt_title"
+      "img_rightup img_left  img_rightdn"
+      "txt_body   txt_body   txt_body";
   }
   & > img{
     object-fit: cover;
@@ -70,9 +71,15 @@
   .img_rightup, .img_rightdn{
     height: 175px;
     width: 300px;
+    @media(max-width:1200px){
+      max-height: 135px;
+    }
   }
-  .txt_right{
-    grid-area: txt_right;
+  .txt_title{
+    grid-area: txt_title;
+  }
+  .txt_body{
+    grid-area: txt_body;
   }
 }
 
