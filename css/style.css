@@ -450,76 +450,52 @@ button:focus {
   .portfolio_project:nth-child(even) {
     background-color: rgba(2, 8, 30, 0.98); }
 
-.portfolio_grid_area.img-left-aligned {
-  justify-content: space-evenly;
-  display: grid;
-  grid-template-columns: 1fr .5fr 2fr;
-  grid-template-areas: "img_left img_rightup txt_right" "img_left img_rightdn txt_right";
-  grid-gap: .5rem; }
-  @media (max-width: 1028px) {
-    .portfolio_grid_area.img-left-aligned {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "img_rightup img_left    img_rightdn" "txt_right   txt_right   txt_right"; } }
-  .portfolio_grid_area.img-left-aligned > img {
-    object-fit: cover;
-    max-height: 355px; }
-    @media (max-width: 1200px) {
-      .portfolio_grid_area.img-left-aligned > img {
-        max-height: none;
-        max-width: 275px; } }
-    @media (max-width: 1028px) {
-      .portfolio_grid_area.img-left-aligned > img {
-        height: 175px;
-        max-width: 300px;
-        margin-bottom: 35px; } }
-  .portfolio_grid_area.img-left-aligned .img_left {
-    grid-area: img_left; }
-    @media (max-width: 1028px) {
-      .portfolio_grid_area.img-left-aligned .img_left {
-        justify-self: center; } }
-  .portfolio_grid_area.img-left-aligned .img_rightup {
-    grid-area: img_rightup; }
-  .portfolio_grid_area.img-left-aligned .img_rightdn {
-    align-self: flex-start;
-    grid-area: img_rightdn; }
-  .portfolio_grid_area.img-left-aligned .img_rightup, .portfolio_grid_area.img-left-aligned .img_rightdn {
-    height: 175px;
-    width: 300px; }
-  .portfolio_grid_area.img-left-aligned .txt_right {
-    grid-area: txt_right; }
+.portfolio_image, .portfolio_image_small {
+  margin-bottom: 2%; }
+
+.portfolio_image {
+  max-width: 100%; }
+
+.portfolio_image_small {
+  max-width: 49%; }
+
+.portfolio_image_small:nth-child(1) {
+  margin-right: 2%; }
 
 .projects_text {
   width: 100%;
-  left: 50%;
   bottom: 0px;
-  text-align: center;
   margin-left: 35px;
   margin-right: 20px; }
-  .projects_text h4 {
+  .projects_text h3 {
     font-size: 34px;
     color: #fff;
     margin-bottom: 5px;
     cursor: pointer; }
     @media (max-width: 1200px) {
-      .projects_text h4 {
-        font-size: 26px; } }
+      .projects_text h3 {
+        font-size: 30px; } }
   .projects_text p {
     margin: 15px 0;
     text-align: left;
     font-size: 15px;
     color: #fff; }
-  .projects_text .portfolioIcon, .projects_text .iconImage {
-    max-width: 32px;
-    max-height: 32px; }
-  .projects_text .portfolioIcon {
-    margin: 5px;
-    position: relative;
-    bottom: 0em; }
-    .projects_text .portfolioIcon .iconImage {
-      object-fit: cover;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.495);
-      padding: 2px; }
+  .projects_text .project_icons {
+    margin: auto;
+    display: flex;
+    justify-content: center; }
+    .projects_text .project_icons .portfolioIcon, .projects_text .project_icons .iconImage {
+      max-width: 32px;
+      max-height: 32px; }
+    .projects_text .project_icons .portfolioIcon {
+      margin: 5px;
+      position: relative;
+      bottom: 0em; }
+      .projects_text .project_icons .portfolioIcon .iconImage {
+        object-fit: cover;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.495);
+        padding: 2px; }
 
 .projects_fillter {
   background: #3f3146; }
@@ -2639,35 +2615,42 @@ h6 {
 /*----------------------------------------------------*/
 /* Start About Area css
 ============================================================================================ */
-.about-area .main-title {
-  margin-bottom: 30px; }
-  .about-area .main-title h1 {
-    font-size: 96px;
-    padding-bottom: 20px;
+.about-area {
+  background-color: black; }
+  .about-area .main-title {
     margin-bottom: 30px; }
-    .about-area .main-title h1:before {
-      left: 10%; }
-      @media (max-width: 1200px) {
-        .about-area .main-title h1:before {
-          left: 12%; } }
-      @media (max-width: 991px) {
-        .about-area .main-title h1:before {
-          left: 8%; } }
-      @media (max-width: 767px) {
-        .about-area .main-title h1:before {
-          left: 10%; } }
-  @media (max-width: 1024px) {
-    .about-area .main-title {
-      padding-bottom: 0px; } }
-
-@media (max-width: 991px) {
+    .about-area .main-title h1 {
+      color: #CDCDCD;
+      font-size: 96px;
+      padding-bottom: 20px;
+      margin-bottom: 30px; }
+      .about-area .main-title h1:before {
+        left: 10%; }
+        @media (max-width: 1200px) {
+          .about-area .main-title h1:before {
+            left: 12%; } }
+        @media (max-width: 991px) {
+          .about-area .main-title h1:before {
+            left: 8%; } }
+        @media (max-width: 767px) {
+          .about-area .main-title h1:before {
+            left: 10%; } }
+    @media (max-width: 1024px) {
+      .about-area .main-title {
+        padding-bottom: 0px; } }
   .about-area .about-left {
-    display: none; } }
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 991px) {
+      .about-area .about-left {
+        display: none; } }
+  .about-area .buttonContainer {
+    text-align: center; }
+    .about-area .buttonContainer .primary-btn {
+      margin-top: 40px; }
 
-.about-area .buttonContainer {
-  text-align: center; }
-  .about-area .buttonContainer .primary-btn {
-    margin-top: 40px; }
+.img-fluid {
+  max-height: 200px; }
 
 /* End About Area css
 ============================================================================================ */

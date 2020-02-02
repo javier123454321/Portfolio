@@ -2,9 +2,11 @@
 ============================================================================================ */
 
 .about-area {
+    background-color: black;
     .main-title {
         margin-bottom: 30px;
         h1 {
+            color: $text-color;
             font-size: 96px;
             padding-bottom: 20px;
             margin-bottom: 30px;
@@ -26,6 +28,8 @@
         }
     }
     .about-left {
+        display: flex;
+        justify-content: center;
         @media (max-width: 991px) {
             display: none;
         }
@@ -36,6 +40,11 @@
             margin-top: 40px;
         }
     }
+}
+
+
+.img-fluid{
+    max-height: 200px;;
 }
 
 /* End About Area css
