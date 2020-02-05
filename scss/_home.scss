@@ -1,6 +1,8 @@
 /* Start About Area css
 ============================================================================================ */
-
+html{
+    scroll-behavior: smooth;
+}
 .about-area {
     background-color: black;
     .main-title {

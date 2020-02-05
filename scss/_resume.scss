@@ -1,8 +1,93 @@
 /*font Variables*/
 
-.resume{
-    h2{
-        text-align: center;
+.resume{    
+    text-align: center;
+    &::after{
+        content: " ";
+        position: absolute;
+        width: 4px;
+        height: 150%;
+        left: 50%;
+        border: dotted brown 2px;
+        margin-left: -2px;
+        transform: translateY(-100%);
+        
+        @media(max-width: 1200px){
+            height: 250%;
+         }
+        @media(max-width: 830px){
+            display: none;
+         }
+        }
+    .section_title{
+        margin-bottom: 10%;
+    }
+    .resume-item{
+        box-sizing: border-box;
+        max-width: 650px;
+        margin: auto;
+        border-bottom:  brown 1px solid;
+        padding: 20px;
+        @media(max-width: 1200px){
+            max-width: 400px;
+        }
+        @media(max-width: 830px){
+            max-width: 95%;
+            min-width: 95%;
+            margin-top: 40px;
+         }
+        &:nth-child(even){
+            text-align: left;
+            border-left: brown 1px solid;
+            transform: translateX(-50%);
+            padding-right: 75px;
+            @media(max-width: 830px){
+                 transform: none;
+                 padding-left: 25px;
+                 padding-right: 25px;
+                 border: brown 1px solid;
+             }
+            &::after{
+                content: " ";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: brown;
+                border-radius: 50%;
+                right: -10px;
+                transform: translateY(50%);
+                @media(max-width: 830px){
+                    display: none;
+                 }
+            }
+        }
+        &:nth-child(odd){
+            text-align: right;
+            border-right: brown 1px solid;
+            transform: translateX(50%);
+            padding-left: 75px;
+            
+            @media(max-width: 830px){
+                transform: none;
+                border: brown 1px solid;
+                text-align: left;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            &::after{
+                content: " ";
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background: brown;
+                border-radius: 50%;
+                left: -10px;
+                transform: translateY(50%);
+                @media(max-width: 830px){
+                    display: none;
+                 }
+            }
+        }
     }
 }
 /*=================== fonts ====================*/

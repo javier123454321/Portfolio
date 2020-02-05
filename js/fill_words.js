@@ -18,7 +18,8 @@ let skills = [
         "Armchair Economist",
         "Snowboarder",
         "Lover",
-        "Tinkerer"
+        "Tinkerer",
+        "Movie Critic",
         ];
 
 function renderText(id, i){

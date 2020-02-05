@@ -881,12 +881,6 @@
             border: 1px solid #eee;
         }
     }
-    textarea {
-        &.form-control {
-            height: 140px;
-            resize: none;
-        }
-    }
     ::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         font-size: 13px;

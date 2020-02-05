@@ -17,6 +17,7 @@
     "get-size": "^2.0.3",
     "isotope": "^1.0.0-alpha.3",
     "jquery": "^3.4.1",
+    "lozad": "^1.14.0",
     "masonry-layout": "^4.2.2",
     "node-sass": "^4.13.1",
     "outlayer": "^2.1.1",

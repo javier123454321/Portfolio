@@ -18,6 +18,9 @@
   }
 }
 .portfolio_project{
+  display: flex;
+  align-self: center;
+  justify-content: center;
   padding: 50px 0;
   &:nth-child(odd){
     background-color: $portfolio-background;
