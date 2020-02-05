@@ -1,11 +1,11 @@
-var x = document.getElementById("contact");
+// var x = document.getElementById("contact");
 
-document.addEventListener('submit', e => {
-    const form = e.target;
-    e.preventDefault();
+// document.addEventListener('submit', e => {
+//     const form = e.target;
   
-    fetch(form.action, {
-        method: form.method,
-        body: new FormData(form)
-      })
-  });
+//     fetch(form.action, {
+//         method: form.method,
+//         body: new FormData(form)
+//       })
+//     e.preventDefault();
+//   });

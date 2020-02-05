@@ -1,3 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="/img/favicon.png" type="image/png">
+	<title>Javier Gonzalez | Software Developer, Designer, Amateur</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<body>
+		<section class="landingBanner fullscreen" id="home">
+			<div class="container">
+				<div class="row d-flex text-center align-items-center">
+					<div class="col-lg-12 tagLine">
+						<h1>Thank You, I will get back to you very soon!</h1>
+						<div class="ctaHire">
+							<a href="/" class="btn circle">Go back</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+
+
 <?php
     $to = "javier.e.glz@gmail.com";
     $from = $_REQUEST['email'];
