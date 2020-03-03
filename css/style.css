@@ -2436,21 +2436,6 @@ h6 {
 /*font Variables*/
 .resume {
   text-align: center; }
-  .resume::after {
-    content: " ";
-    position: absolute;
-    width: 4px;
-    height: 150%;
-    left: 50%;
-    border: dotted brown 2px;
-    margin-left: -2px;
-    transform: translateY(-100%); }
-    @media (max-width: 1200px) {
-      .resume::after {
-        height: 250%; } }
-    @media (max-width: 830px) {
-      .resume::after {
-        display: none; } }
   .resume .section_title {
     margin-bottom: 10%; }
   .resume .resume-item {
@@ -2469,7 +2454,9 @@ h6 {
         margin-top: 40px; } }
     .resume .resume-item:nth-child(even) {
       text-align: left;
-      border-left: brown 1px solid;
+      border: brown 1px solid;
+      border-right: dotted brown 1px;
+      border-top: none;
       transform: translateX(-50%);
       padding-right: 75px; }
       @media (max-width: 830px) {
@@ -2492,7 +2479,9 @@ h6 {
             display: none; } }
     .resume .resume-item:nth-child(odd) {
       text-align: right;
-      border-right: brown 1px solid;
+      border: brown 1px solid;
+      border-left: dotted brown 1px;
+      border-top: none;
       transform: translateX(50%);
       padding-left: 75px; }
       @media (max-width: 830px) {
