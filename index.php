@@ -120,7 +120,7 @@
 								Website done for my personal company Memory Captures. Did the entire design, back, and front end, as well as hosting and deployment. First live project that required custom business logic.
 							</P>
 							<div class="project_icons">
-								<a class="portfolioIcon" href="memorycaptures.com"><img class="iconImage" src="/img/elements/see_info.svg" alt="See Project"></a>
+								<a class="portfolioIcon" href="https://memorycaptures.com"><img class="iconImage" src="/img/elements/see_info.svg" alt="See Project"></a>
 								<a class="portfolioIcon" href="http://github.com/javier123454321/memorycaptures" target="_blank"><img class="iconImage" src="/img/elements/github.png" alt="See Code"></a>
 							</div>
 						</div>
@@ -139,7 +139,10 @@
 							<p>Sketchup | PowerTools</p>
 							<p>Personal Design & Build Project</p>
 							<P>
-								Designed and built a bed for myself using sketchup and powertools. I am a strong believer in design and detail orientation at everything I do. This project expresses this, and the way that design thinking can be implemented everywhere.
+								Designed and built a bed for myself using sketchup and powertools. 
+								<div class="quote">“It is the pervading law of all things organic and inorganic, of all things physical and metaphysical, of all things human and all things superhuman, of all true manifestations of the head, of the heart, of the soul, that the life is recognizable in its expression, that form ever follows function. This is the law.”
+								-Louis Sullivan</div>
+								In the digital world where abstractions are built on top of abstractions, I like to keep in touch with the physical and not get lost in the screen.
 							</P>
 						</div>
 					</div>	
@@ -272,42 +275,6 @@
 	<!--================ Start Footer Area =================-->
 	
 	<a id="contact_area"></a>
-	<footer class="footer_area section_gap">
-		<div class="container">
-			<div class="row footer_inner justify-content-center">
-				<div class="col-lg-6 text-center">
-						<div class="title">
-							<h3>Drop Me a Line:</h3> <br>
-						</div>
-						<div id="contact" class="contact_form">
-							<form action="contact.php" method="post">
-								Name: <br><input type="text" name="name"><br>
-								Email: <br><input type="text" name="email" required><br>
-								Message: <br><input type="textarea" wrap="hard" name="message"><br>
-								<input type="submit" value="Submit" name="contact-me">
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!--================End Footer Area =================-->
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/main.js"></script>
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/fill_words.js"></script>
-	<script src="js/theme.js"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-	  AOS.init();
-	</script>
-</body>
-
-</html>
+	<?php
+	require (__DIR__."/views/partials/footer.php");
+	?>
