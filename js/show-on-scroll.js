@@ -1,7 +1,6 @@
 var scroll = window.requestAnimationFrame || function(callback){ window.setTimeout(callback, 1000/60)};
 
 var elementsToShow = document.querySelectorAll('.resume-item');
-console.log(elementsToShow);
 
 function loop() {
     elementsToShow.forEach(function (element, index) {
@@ -24,6 +23,7 @@ function loop() {
       el = el[0];
     }
     var rect = el.getBoundingClientRect();
+
     return (
       (rect.top <= 0
         && rect.bottom >= 0)

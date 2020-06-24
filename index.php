@@ -1,62 +1,6 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="/img/favicon.png" type="image/png">
-	<title>Javier Gonzalez | Software Developer, Designer, Amateur</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
-</head>
-
+<?php require(__DIR__.'/views/partials/header.php'); ?>
 <body>
-	<a href="#home"></a>
-	<!--================Header Menu Area =================-->
-	<header class="header_area">
-		<div class="main_menu">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<div class="container">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-						
-						<ul class="nav navbar-nav menu_nav justify-content-end">
-							<li class="nav-item active">
-								<a class="nav-link" href="#home">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#portfolio_area">Portfolio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#about_area">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" target="_blank" href="http://graspingdesign.wordpress.com">Blog</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact_area">Contact</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</div>
-	</header>
-	<!--================Header Menu Area =================-->
+<?php require(__DIR__.'/views/partials/navbar.php'); ?>
 
 	<!--================Home Banner Area =================-->
 	<section class="landingBanner fullscreen" id="home">
@@ -103,25 +47,26 @@
 				<div class="row justify-content-center">
 					<div data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" class="col-sm-12 col-md-4">
 						<div class="row">
-							<img class="lozad portfolio_image MemC_mockup" src="/img/works/work1.1.png" alt="">
+							<img class="portfolio_image MemC_mockup" src="/img/works/work1.1.gif" alt="">
 						</div>
 						<div class="row">
-							<img class="lozad portfolio_image_small" src="/img/works/work1.2.png" alt="">
-							<img class="lozad portfolio_image_small" src="/img/works/work1.3.gif" alt="">							
+							<img class="portfolio_image_small" src="/img/works/work1.2.png" alt="">
+							<img class="portfolio_image_small" src="/img/works/work1.3.png" alt="">							
 						</div>
 					</div>
 
  					<div data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="500" class="projects_text row col-sm-12 col-md-6 align-items-center">
 						<div class="col-sm-12">
-							<h3>Memory Captures Website</h3>
-							<p>HTML | CSS | JavaScript | PHP</p>
+							<h3>Memory Captures Full Stack Application</h3>
+							<p>Vue.js | Laravel</p>
 							<p>Personal Business</p>
 							<P>
-								Website done for my personal company Memory Captures. Did the entire design, back, and front end, as well as hosting and deployment. First live project that required custom business logic.
+								All content from design, to architecture, to implementation done by me. A full stack application for delivering media assets to customers that have bought a physical copy already, and is used in production.<br>
+								Navigate to <a href="https://memorycaptures.com/claim" target="blank"> https://memorycaptures.com/claim </a> and write the access code: sold or access code: notsold to see the respective behavior of each.
 							</P>
 							<div class="project_icons">
-								<a class="portfolioIcon" href="https://memorycaptures.com"><img class="iconImage" src="/img/elements/see_info.svg" alt="See Project"></a>
-								<a class="portfolioIcon" href="http://github.com/javier123454321/memorycaptures" target="_blank"><img class="iconImage" src="/img/elements/github.png" alt="See Code"></a>
+								<a class="portfolioIcon" href="https://memorycaptures.com"><img class="iconImage" src="/img/elements/see_info.svg" alt="See Project"><span class="iconImage-text">See Project</span></a>
+								<a class="portfolioIcon" href="http://github.com/javier123454321/memorycaptures_frontend" target="_blank"><img class="iconImage" src="/img/elements/github.png" alt="See Code"> <span class="iconImage-text">See Code</span></a>
 							</div>
 						</div>
 					</div>	

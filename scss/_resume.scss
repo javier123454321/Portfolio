@@ -79,11 +79,11 @@
     transition-delay: 1s;
 }
 .animateRight{
-    animation: slideRight 1s ease-in-out;
+    animation: slideRight 1.5s ease-in-out;
     transform: translateX(-50%);
 }
 .animateLeft{
-    animation: slideLeft 1s ease-in-out;
+    animation: slideLeft 1.5s ease-in-out;
     transform: translateX(-50%);
 }
 @keyframes slideRight{

@@ -401,16 +401,19 @@ button:focus {
     display: flex;
     justify-content: center; }
     .projects_text .project_icons .portfolioIcon, .projects_text .project_icons .iconImage {
-      max-width: 32px;
       max-height: 32px; }
     .projects_text .project_icons .portfolioIcon {
       margin: 5px;
       position: relative;
-      bottom: 0em; }
+      bottom: 0em;
+      background-color: rgba(255, 255, 255, 0.495);
+      border-radius: 16px; }
+      .projects_text .project_icons .portfolioIcon .iconImage-text {
+        padding-right: 10px;
+        color: white; }
       .projects_text .project_icons .portfolioIcon .iconImage {
         object-fit: cover;
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.495);
         padding: 2px; }
 
 .projects_fillter {
@@ -2491,11 +2494,11 @@ h6 {
   transition-delay: 1s; }
 
 .animateRight {
-  animation: slideRight 1s ease-in-out;
+  animation: slideRight 1.5s ease-in-out;
   transform: translateX(-50%); }
 
 .animateLeft {
-  animation: slideLeft 1s ease-in-out;
+  animation: slideLeft 1.5s ease-in-out;
   transform: translateX(-50%); }
 
 @keyframes slideRight {
