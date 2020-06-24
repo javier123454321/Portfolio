@@ -1,24 +1,6 @@
-/*font Variables*/
-
 .resume{    
 
     text-align: center;
-    // &::after{
-    //     content: " ";
-    //     position: absolute;
-    //     width: 4px;
-    //     height: 150%;
-    //     left: 50%;
-    //     border: dotted brown 2px;
-    //     margin-left: -2px;
-    //     transform: translateY(-100%);
-        
-    //     @media(max-width: 1200px){
-    //         height: 250%;
-    //      }
-    //     @media(max-width: 830px){
-    //         display: none;
-    //      }
     .section_title{
         margin-bottom: 10%;
     }
@@ -41,7 +23,6 @@
             border: brown 1px solid;
             border-right: dotted brown 1px;
             border-top: none;
-            transform: translateX(-50%);
             padding-right: 75px;
             @media(max-width: 830px){
                  transform: none;
@@ -92,6 +73,33 @@
                  }
             }
         }
+    }
+}
+.animateRight, .animateLeft{
+    transition-delay: .5s;
+}
+.animateRight{
+    animation: slideRight 1s ease-in-out;
+    transform: translateX(-50%);
+}
+.animateLeft{
+    animation: slideLeft 1s ease-in-out;
+    transform: translateX(-50%);
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-200%)
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(200%)
+    }
+    100%{
+        transform: translateX(50%);
     }
 }
 /*=================== fonts ====================*/
