@@ -234,13 +234,21 @@
 				</div>
 
 				<div class="resume-item">
-					<h5>Celltrak | Software Development Engineer in Test</h5>
+					<h5>Celltrak | Software Automation Engineer</h5>
 					<p>August 2019 - Present,  Chicago, IL</p>
 					<div class="description">
-						<p>Created and updated an automation testing suite to handle the process of continuous integration of an application with Java, Selenium, and JUnit.
-							Championed the process of improving several UI features of the application.
-							Identified and detailed problems in the codebase, and directed developer resources to resolve them.
-							Discovering the root cause of issues that appear in the application, tracking the flow of information through using SQL, internal and external APIs to find and report flaws in the process.
+						<p>Reduced regression testing time by 20% by implementing an automation testing framework with Java and Selenium.<br>
+ 							Improving development and testing productivity by creating and maintaining reusable and modular JavaScript functions that mock client API requests.
+						</p>
+					</div>
+				</div>
+
+				<div class="resume-item">
+					<h5>SOLISCOLOMER Arquitectos | Architectural Designer For Social Impact Projects</h5>
+					<p>July 2017 - April 2018,  Guatemala City</p>
+					<div class="description">
+						<p>Secured several contracts for SolisColomer through designing and presenting master plans, residential, and commercial spaces for organizations and individuals in Guatemala.<br>
+							Introduced modern design processes and computational methods to increase building and design efficiency.
 						</p>
 					</div>
 				</div>

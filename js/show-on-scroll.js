@@ -6,7 +6,7 @@ console.log(elementsToShow);
 function loop() {
     elementsToShow.forEach(function (element, index) {
       if (isElementInViewport(element)) {
-          if(index+2 % 1 == 0){
+          if((index) % 2 === 0){
             element.classList.add('animateRight');
           }else{
             element.classList.add('animateLeft');

@@ -76,7 +76,7 @@
     }
 }
 .animateRight, .animateLeft{
-    transition-delay: .5s;
+    transition-delay: 1s;
 }
 .animateRight{
     animation: slideRight 1s ease-in-out;
@@ -88,7 +88,11 @@
 }
 @keyframes slideRight{
     0%{
+        opacity: 0;
         transform: translateX(-200%)
+    }
+    80%{
+        opacity: 1;
     }
     100%{
         transform: translateX(-50%);
@@ -96,7 +100,11 @@
 }
 @keyframes slideLeft{
     0%{
+        opacity: 0;
         transform: translateX(200%)
+    }
+    80%{
+        opacity: 1;
     }
     100%{
         transform: translateX(50%);
