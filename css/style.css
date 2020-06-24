@@ -2418,7 +2418,6 @@ h6 {
 .form-select .nice-select::after {
   right: 20px; }
 
-/*font Variables*/
 .resume {
   text-align: center; }
   .resume .section_title {
@@ -2442,7 +2441,6 @@ h6 {
       border: brown 1px solid;
       border-right: dotted brown 1px;
       border-top: none;
-      transform: translateX(-50%);
       padding-right: 75px; }
       @media (max-width: 830px) {
         .resume .resume-item:nth-child(even) {
@@ -2488,6 +2486,29 @@ h6 {
         @media (max-width: 830px) {
           .resume .resume-item:nth-child(odd)::after {
             display: none; } }
+
+.animateRight, .animateLeft {
+  transition-delay: .5s; }
+
+.animateRight {
+  animation: slideRight 1s ease-in-out;
+  transform: translateX(-50%); }
+
+.animateLeft {
+  animation: slideLeft 1s ease-in-out;
+  transform: translateX(-50%); }
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-200%); }
+  100% {
+    transform: translateX(-50%); } }
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200%); }
+  100% {
+    transform: translateX(50%); } }
 
 /*=================== fonts ====================*/
 /* Start About Area css

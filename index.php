@@ -224,9 +224,11 @@
 					<h5>Memory Captures | Administrative Director</h5>
 					<p>July 2019 - Present,  Chicago, IL</p>
 					<div class="description">
-						<p>Built a company from the ground up in the marketing and photography sales industry.
-							Designed, implemented, and launched a working web application from zero to deployment using HTML5, CSS, JavaScript, and PHP 
-							Fostered relationships with partners in the restaurant/hospitality industry, negotiating, following up, and closing the deal on business partnerships.						
+						<p>Designed, implemented, and deployed a custom full-stack application using Vue.js, and Laravel (PHP). <br>
+							Took an idea to a finished product, integrating third party APIs to a custom built media asset management and
+							delivery dashboard with custom Auth and CRUD functionality.<br>
+							Fostering relationships with partners in the restaurant/hospitality industry, negotiating, following up, and closing
+							the deal on business partnerships which led to thousands of dollars in monthly revenue.					
 						</p>
 					</div>
 				</div>

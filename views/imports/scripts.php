@@ -6,6 +6,7 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/fill_words.js"></script>
 	<script src="js/theme.js"></script>
+	<script src="js/show-on-scroll.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 	  AOS.init();
